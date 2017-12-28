@@ -53,3 +53,5 @@ Firefox理想图标：
 ![这里写图片描述](http://img.blog.csdn.net/20171227221912993?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 比较看出：实验结果形成了基本的轮廓，但是细节不好，并且迭代次数过多，与[科学松鼠会 遗传算法：内存中的进化](http://songshuhui.net/archives/10462)文章中贴出的算法结果相差很多，应该是我有很多细节、优化方面没考虑到。有兴趣的同学可以看看，如果各位有更好的思路或者优化方法的，希望能多多指导，感谢各位！
+
+**最近找到几篇新的文章，代码还在优化，持续更新中......**
