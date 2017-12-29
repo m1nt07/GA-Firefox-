@@ -31,9 +31,9 @@
 
  1. 交叉率：0.86
  2. 变异率：0.1
- 3. 迭代次数：170000
+ 3. 迭代次数：180000
  4. 种群大小：16
- 5. 三角形个数：30
+ 5. 三角形个数：100
 
 ### 微调
 
@@ -46,11 +46,11 @@
 Firefox理想图标：
 ![Firefox理想图标](http://img.blog.csdn.net/20171227221434530?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-遗传算法170000代最优扇贝：
-![170000代最优扇贝](http://img.blog.csdn.net/20171227221517471?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+遗传算法180000代最优扇贝：
+![这里写图片描述](http://img.blog.csdn.net/20171229142258813?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 遗传算法历代最优扇贝：
-![这里写图片描述](http://img.blog.csdn.net/20171227221912993?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+![这里写图片描述](http://img.blog.csdn.net/20171229142358295?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvVHVhbno3/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
 比较看出：实验结果形成了基本的轮廓，但是细节不好，并且迭代次数过多，与[科学松鼠会 遗传算法：内存中的进化](http://songshuhui.net/archives/10462)文章中贴出的算法结果相差很多，应该是我有很多细节、优化方面没考虑到。有兴趣的同学可以看看，如果各位有更好的思路或者优化方法的，希望能多多指导，感谢各位！
 
