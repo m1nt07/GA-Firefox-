@@ -1,6 +1,10 @@
 # GA-Firefox-
 通过遗传算法使用100个半透明三角形绘制Firefox图标。（需要OpenCV环境）
 
+![Badge](https://img.shields.io/badge/version-0.1.1-orange.svg)
+![Badge](https://img.shields.io/badge/build-passing-green.svg)
+
+
 ## 实现方法：
 
 **参考[科学松鼠会 遗传算法：内存中的进化](http://songshuhui.net/archives/10462)的思路，下面是我的实现方法：**
