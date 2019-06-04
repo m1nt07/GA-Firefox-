@@ -234,12 +234,12 @@ void Crossover(Scallop *pop)
 		if (count(unselected_pos.begin(), unselected_pos.end(), i))
 		{
 			//删除该下标
-			iter = std::find(unselected_pos.begin(), unselected_pos.end(), i);
+			iter = find(unselected_pos.begin(), unselected_pos.end(), i);
 			unselected_pos.erase(iter);
 
 			//随机寻找与之配对的染色体并删除配对的下标
 			pop_num = unselected_pos[rand() % unselected_pos.size()];
-			iter = std::find(unselected_pos.begin(), unselected_pos.end(), pop_num);
+			iter = find(unselected_pos.begin(), unselected_pos.end(), pop_num);
 			unselected_pos.erase(iter);
 
 			//有CROSS_RATE概率交叉
@@ -315,9 +315,9 @@ void Print_Pop(Scallop *pop)
 	for (int i = 0; i < POP_NUM; i++)
 	{
 		if(pop[i].update_flag)
-			std::printf("%d: fit_value=%f updated\n", i, pop[i].fit_value);
+			printf("%d: fit_value=%f updated\n", i, pop[i].fit_value);
 		else
-			std::printf("%d: fit_value=%f\n", i, pop[i].fit_value);
+			printf("%d: fit_value=%f\n", i, pop[i].fit_value);
 	}
 }
 
@@ -340,7 +340,7 @@ void Draw_Max_Scallop(Scallop *pop, int generation)
 	compression_params.push_back(9);//从0-9较高的值意味着更小的尺寸和更长的压缩时间而默认值是3.
 	string fitness_str = to_string(pop[max_scallop.first].fit_value), generation_str = to_string(generation);
 	string str = "C:\\Visual Studio 2017 Projects\\GA\\GA\\第" + generation_str + "代最优扇贝"+ fitness_str +".png";
-	cv::imwrite(str, dst_image, compression_params);
+	imwrite(str, dst_image, compression_params);
 }
 
 
@@ -353,10 +353,10 @@ int main(int argc, char* argv[])
 	ideal_image_length = ideal_image.rows;
 
 	// 随机创建初始群体
-	std::printf("随机创建初始群体:\n");
+	printf("随机创建初始群体:\n");
 	Rand_Create_Pop(cur_pop);
 	for (int i = 0; i < POP_NUM; i++)
-		std::printf("%d: fit_value=%f\n", i, cur_pop[i].fit_value);
+		printf("%d: fit_value=%f\n", i, cur_pop[i].fit_value);
 
 	// 种群繁衍
 	for (int count = 1; count <= ITER_NUM; count++)
@@ -372,7 +372,7 @@ int main(int argc, char* argv[])
 		Selection(cur_pop);
 
 		// 输出当代种群
-		std::printf("种群繁衍至第%d代:\n", count);
+		printf("种群繁衍至第%d代:\n", count);
 		Print_Pop(cur_pop);
 
 		//每隔INTERVAL代绘制当代种群适应度最高的扇贝
