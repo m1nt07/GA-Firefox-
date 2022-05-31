@@ -1,0 +1,19 @@
+{
+    "code-runner.executorMap": {
+        "c": "cd $dir && make  && ./$fileNameWithoutExt && make clean",
+        "cpp": "cd $dir && make  && ./$fileNameWithoutExt && make clean"
+    },
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlight": "all",
+    "editor.formatOnSave": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true,
+    "code-runner.enableAppInsights": false,
+    "C_Cpp.updateChannel": "Insiders",
+    "[makefile]": {
+        "editor.insertSpaces": true
+    },
+    "C_Cpp.default.includePath": [
+        "/opt/homebrew/Cellar/opencv/4.5.5_2/include"
+    ]
+}
