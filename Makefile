@@ -1,4 +1,4 @@
-TARGET = ./GA_m
+TARGET = ./GA
 
 SRCS := $(wildcard ./src/*.cpp ./*.cpp)
 
