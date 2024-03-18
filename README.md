@@ -64,3 +64,7 @@ MonaLisa理想图标及遗传算法最优扇贝：
 MonaLisa遗传算法历代最优扇贝：
 
 ![这里写图片描述](demo/GA_MonaLisa_Process.jpg)
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=m1nt07/GA-Firefox-&type=Date)](https://star-history.com/#m1nt07/GA-Firefox-&Date)
